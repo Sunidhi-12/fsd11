@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <title>Yunik</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .logo img {
+        height: 76px;
+        width: 76px;
+        margin-left: 35px;
+        position: fixed;
+        top: 2px;
+    }
+
+    .navbar {
+        display: flex;
+        font-family: 'ZCOOL KuaiLe', cursive;
+    }
+
+    .navbar::before {
+        content: "";
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.808);
+        height: 11%;
+        width: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        position: fixed;
+    }
+
+    .navbar ul li {
+        margin-top: 9px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        margin: 4px 30px;
+        color: white;
+        padding: 4px;
+    }
+
+    .navbar ul li a:hover {
+        color: black;
+        /* display: block; */
+        background-color: white;
+        border-radius: 12px;
+    }
+
+    #home {
+        margin-left: 289px;
+    }
+
+    #login {
+        margin-left: 168px;
+    }
+
+    .home::before {
+        content: "";
+        position: absolute;
+        background-image: url('momo\ bg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 80%;
+        top: 0;
+        left: 0px;
+        z-index: -2;
+        opacity: 0.89;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="momo site logo.png" alt="Yunik.com">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li class="item" id="home"><a href="#">HOME</a></li>
+                <li class="item"><a href="#">STORES</a></li>
+                <li class="item"><a href="#">GIFT CARDS</a></li>
+                <li class="item"><a href="#">ENQUIRY</a></li>
+                <li class="item"><a href="#">CONTACT US</a></li>
+                <li class="item" id="login"><a href="#">LOGIN</a></li>
+                <li class="item"><a href="#">SIGN UP</a></li>
+            </ul>
+            <div class="home">
+            </div>
+        </div>
+    </nav>
+    <section>
+        
+    </section>
+</body>
+
+</html>
